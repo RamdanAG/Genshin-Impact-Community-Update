@@ -4,107 +4,26 @@
     /* border: 1px black solid; */
 }
 
-nav {
-    width: 13.9em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-  }
-  
-  ul {
-    margin-top: 1000px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  li {
-    margin: 5px 0;
-    margin-top: 1.2em;
-  }
-  
-  a {
-    font-size: 13px;
-    text-decoration: none;
-    color: black;
-    margin-left: 1em;
-    font-family: 'Poppins', sans-serif;
-    font-weight:200;
-  }
-
-  .navbarrlist{
-    position: relative;
-    left: 1.3em;
-    width: 9em;
-  }
-
-  .CopyrightIMG{
-    position: relative;
-    left: 1em;
-  }
-
-.imgLogo{
-  margin-bottom: 5em;
-  position: relative;
-  left: 1.3em;
-  width: 150px;
-  height: auto;
+body{
+  background: #0c0f1d;
 }
 
-.box {
-  margin-top:2em;
-  width: 200px;
-  height: 300px;
-  background-color: #f0f0f0;
+/*Header*/
+.containerhead{
+  top: 1em;
   position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  left: 20px;
-  box-shadow: -4px 40px 83px -44px rgba(0,0,0,0.1);
-  background: rgba(0,0,0,0.1);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(71,182,73,1) 0%, rgba(17,139,68,1) 100%);
-}
-.mask {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-  }
-
-.imgbanner{
-  bottom: 40px;
-  position: relative;
-  right: 160px;
-    width: 500px;
-    height: auto;
-}
-
-.fa-search {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-.search-box {
-  width: auto;
-  position: relative;
-  width: 300px;
-  height: 30px;
-  padding: 1px 1px 1px 10px;
+  margin: auto;
+  background: #1b1d2a;
+  width: 51%;
+  height: 44em;
+  border-radius: 20px;
   border: none;
-  left: 400px;
-  border-radius: 10px;
-  font-size: 16px;
-  background-color: white;
-  top: 1.6em;
 }
-
-/* Mulai dari Header Head */
 
 .Boxmain{
-  border: 1px solid white;
+  top: 1em;
+  flex-wrap: wrap;
+  margin: auto;
   border-radius: 20px;
   display: flex;
   width: 59em;
@@ -112,7 +31,6 @@ nav {
   background-color: #f0f0f0;
   position: relative;
   overflow: hidden;
-  left: 20em;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
@@ -124,34 +42,73 @@ nav {
 
 .textheader{
   width: 56em;
-  top: 1em;
+  top: 2em;
   position: relative;
-  left: 20em;
+  margin: auto;
 }
 
 .textheader h6{
+  color: white;
   display: inline;
   font-family: 'Poppins', sans-serif;
   font-weight:200;
   font-size: 20px;
-  margin-right:8em;
 }
 
 .textheader h1{
+  color: white;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight:bold;
 }
 
-.ListHeadContent {
-  padding-right: 4em;
+.textheader p{
   position: relative;
-  top: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  top: 10px;
+}
+
+.textheader a{
+  text-decoration: none;
+  color: #25c5df;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*End Header*/
+
+.ListHeadContent{
+  margin: auto;
+  top: 3em;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  background: #1b1d2a;
+  width: 51%;
+  height: 44em;
+  border-radius: 20px;
+  border: none;
+  justify-content: center;
+}
+
+.txtContent{
+  position: relative;
+  right: 22em;
+  color: white;
+}
+
+.txtContent h1{
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.txtContent h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight:200;
 }
 
 .row {
@@ -162,17 +119,18 @@ nav {
   gap: 20px;
 }
 
-.BoxListNews {
+.Box {
+  bottom: 1em;
+  justify-content: center;
   border-radius: 10px;
   position: relative;
   width: 300px;
   height: 300px;
   overflow: hidden;
-  border: 1px solid white;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.BoxListNews img {
+.Box img {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,7 +139,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  object-position: center center; /* gambar berada pada posisi tengah-tengah */
 }
 
 .content {
@@ -201,6 +159,34 @@ h2 {
   margin-top: 0
 }
 
+@media only screen and (max-width: 1031px) and (min-width: 688px) {
+  .ListHeadContent {
+    flex-wrap: wrap;
+  }
+  .Deleted .Box{
+    display: none;
+  }
 
+}
 
-/* akhir dari Header Head */
+@media only screen and (max-width: 800px) {
+  .Boxmain{
+    border-radius: 0px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    width:auto;
+    height: 15em;
+    border: 0px;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+
+  .imgheadermain{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+}
